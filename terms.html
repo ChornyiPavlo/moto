@@ -1,61 +1,198 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <meta name="description"
-        content="Pin Up ile Star Race oyununda galaksiler arası bir maceraya atılın ve en hızlı yarışçı olun."/>
-  <meta name="author" content=""/>
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Moto Racing in the Desert - Pin Up">
+  <meta name="description" content="Moto Racing in the Desert by Pin Up is an adrenaline-pumping motorcycle racing game set in a challenging desert environment.">
+  <title>Moto Racing in the Desert - Pin Up</title>
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
-  <title>Pin Up ile Star Race Heyecanı</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet"/>
-  <link href="css/responsive.css" rel="stylesheet"/>
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header .logo img {
+      width: 100px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #b33b3b;
+      white-space: nowrap;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      margin: 50px 200px;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .hero-content p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 60px 20px;
+      background-color: white;
+    }
+
+    section h2 {
+      color: #003366;
+    }
+
+    section h3 {
+      color: #b33b3b;
+    }
+
+    .text-image {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .text-image .text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text-image .image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .carousel {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    .carousel img {
+      margin: 0 10px;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .text-image {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+
+
+  </style>
 </head>
-
 <body>
-<div class="hero_area">
-  <header class="header_section">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.jpg">
-          <span>Star Race - Speed and survival with Pin-up</span>
-        </a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Ana sayfa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="policy.html">Gizlilik Politikası</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="terms.html">Şartları ve Koşulları</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<!-- Header Section -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
     </div>
-  </header>
-</div>
+    <h1>Racing in the Desert</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana sayfa</a></li>
+        <li><a href="index.html#story">Hikaye</a></li>
+        <li><a href="index.html#features">Özellikler</a></li>
+        <li><a href="index.html#screenshots">Ekran görüntüleri</a></li>
+        <li><a href="policy.html">Gizlilik Politikası</a></li>
+        <li><a href="terms.html">Şartları ve Koşulları</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <div class="bg">
   <div class="container">
@@ -83,76 +220,24 @@
   </div>
 </div>
 
-<section class="info_section layout_padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5">
-        <div class="info-logo">
-          <h2>
-            Star Race - Speed and survival with Pin-up
-          </h2>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="info-nav">
-          <h4>
-            Navigasyon
-          </h4>
-          <ul>
-            <li>
-              <a href="index.html">
-                Ana sayfa
-              </a>
-            </li>
-            <li>
-              <a href="policy.html">
-                Gizlilik Politikası
-              </a>
-            </li>
-            <li>
-              <a href="terms.html">
-                Şartları ve Koşulları
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="info-contact">
-          <h4>
-            İletişim bilgileri
-          </h4>
-          <div class="location">
-            <h6>
-              Kurumsal Ofis Adresi:
-            </h6>
-            <a href="">
-              <img src="images/location.png" alt="Star Race oyunu sahnesi">
-              <span>Azerbaijan,Baku, Nasimi district, Alimardan-bek Topchubashev 11</span>
-            </a>
-          </div>
-          <div class="call">
-            <h6>
-              Müşteri servisi:
-            </h6>
-            <a href="">
-              <img src="images/telephone.png" alt="Star Race oyunu sahnesi">
-              <span>(+99450) 616-26-08</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+<section id="contact" class="contact">
+  <div class="container1">
+    <h2>İletişim bilgileri</h2>
+    <ul>
+      <li>Müşteri servisi: (+99450) 616-26-08</li>
+      <li>Email: info@motorcycleracing.com</li>
+      <li>Kurumsal Ofis Adresi: Azerbaijan,Baku, Nasimi district, Alimardan-bek Topchubashev 11</li>
+    </ul>
   </div>
 </section>
 
-<section class="container-fluid footer_section">
-  <p>
-    Telif hakkı &copy; 2024 Tüm Hakları Saklıdır
-  </p>
-</section>
+<!-- Footer Section -->
+<footer>
+  <div class="container1">
+    <p>Telif hakkı © 2024 Tüm Hakları Saklıdır</p>
+  </div>
+</footer>
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
