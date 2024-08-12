@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Moto Racing in the Desert - Pin Up">
+    <meta name="description" content="Moto Racing in the Desert by Pin Up is an adrenaline-pumping motorcycle racing game set in a challenging desert environment.">
+    <title>Moto Racing in the Desert - Pin Up</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #b33b3b;
+    white-space: nowrap;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+section h2 {
+    color: #003366;
+}
+
+section h3 {
+    color: #b33b3b;
+}
+
+.text-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-image .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-image .image {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.carousel img {
+    margin: 0 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .text-image {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <h1>Racing in the Desert</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Ana sayfa</a></li>
+                    <li><a href="#story">Hikaye</a></li>
+                    <li><a href="#features">Özellikler</a></li>
+                    <li><a href="#screenshots">Ekran görüntüleri</a></li>
+                    <li><a href="policy.html">Gizlilik Politikası</a></li>
+                    <li><a href="terms.html">Şartları ve Koşulları</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="img/main_img.jpg" alt="Game Image">
+        <div class="hero-content">
+            <h1>"Moto Racing in the Desert" by Pin Up</h1>
+            <p>Pin Up’ın "Moto Racing in the Desert"i, çöl ortamında heyecan dolu motosiklet yarışları sunuyor. Hız ve stratejiyle zorlukları aşın!</p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <h2>Başlık: Pin Up ile Çöl Yarışları</h2>
+            <div class="text-image">
+                <div class="text">
+                    <p>Pin Up'ın en son çıkardığı aksiyon dolu yarış oyunu "Moto Racing in the Desert", adrenalin severleri ve motosiklet tutkunlarını büyüleyen bir deneyim sunuyor. Çölün engin kumları üzerinde hız sınırlarını zorlayacak bu heyecan verici yarış oyunu, oyuncuları benzersiz bir yolculuğa çıkarıyor. Bu oyun, sadece bir yarış değil, aynı zamanda cesaret, strateji ve sürüş becerilerini test eden bir meydan okuma.</p>
+                </div>
+                <div class="image">
+                    <img src="img/1.jpg" alt="Story Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h3>Oyunun Temel Özellikleri</h3>
+            <div class="text-image">
+                <div class="text">
+                    <p>Pin Up'ın "Moto Racing in the Desert"i, görsel olarak etkileyici bir çöl ortamında geçiyor. Çölün kavurucu sıcaklıkları ve zorlu arazi koşulları, oyunun zorluk seviyesini artırıyor. Oyuncular, gelişmiş motosikletleriyle çeşitli engelleri aşarak ve rakiplerini geçerek birinci olma mücadelesi veriyor. Oyun, gerçekçi fizik motoru ve dinamik hava koşullarıyla dikkat çekiyor. Çöl yarışlarının zorluğuna uygun olarak tasarlanmış motosikletler ve gelişmiş kontrol mekanizmaları, her yarışın eşsiz bir deneyim olmasını sağlıyor.</p>
+                </div>
+                <div class="image">
+                    <img src="img/2.jpg" alt="Features Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Pin Up ile Çöl Yarışları</h3>
+            <div class="text-image">
+                <div class="text">
+                    <p>Pin Up, "Moto Racing in the Desert" oyununda oyunculara gerçek bir yarış deneyimi sunmak için her ayrıntıyı özenle tasarladı. Oyuncular, geniş bir motosiklet yelpazesinden seçim yapabiliyor ve kendi araçlarını kişiselleştirme fırsatı buluyor. Ayrıca, oyunun çeşitli seviyeleri ve pistleri, oyuncuların becerilerini test etmek ve gelişmelerini görmek için birçok fırsat sunuyor.</p>
+                </div>
+                <div class="image">
+                    <img src="img/3.jpg" alt="Features Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Yarışın Derinlikleri</h3>
+            <div class="text-image">
+                <div class="text">
+                    <p>Oyun, sadece hız ve rekabeti değil, aynı zamanda stratejiyi de ön planda tutuyor. Oyuncular, yarış sırasında hava koşullarını ve zemin değişikliklerini dikkate alarak stratejik kararlar vermek zorunda kalıyor. Çölün zorlu şartlarına uygun olarak tasarlanmış motosikletler, bu stratejik unsurları en iyi şekilde yönetmek için gerekli araçları sunuyor.</p>
+                </div>
+                <div class="image">
+                    <img src="img/4.jpg" alt="Features Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Pin Up’ın İnovatif Yaklaşımı</h3>
+            <div class="text-image">
+                <div class="text">
+                    <p>Pin Up, "Moto Racing in the Desert" oyununda her zaman yenilikçi bir yaklaşım benimsemeye özen gösterdi. Oyunun grafikleri, ses efektleri ve genel tasarımı, oyunculara benzersiz bir deneyim sunmak için titizlikle hazırlandı. Çölün etkileyici manzaraları ve detaylı pist tasarımı, oyuncuları adeta gerçek bir yarış ortamına taşıyor.</p>
+                </div>
+                <div class="image">
+                    <img src="img/5.jpeg" alt="Features Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Topluluk ve Rekabet</h3>
+            <div class="text-image">
+                <div class="text">
+                    <p>Pin Up, oyunun sosyal etkileşim yönünü de unutmamış. Oyuncular, çevrim içi olarak arkadaşlarıyla veya diğer oyuncularla rekabet edebilir ve liderlik tablolarında kendilerini gösterebilirler. Bu, oyunun rekabetçi doğasını daha da eğlenceli hale getiriyor.</p>
+                </div>
+                <div class="image">
+                    <img src="img/6.jpeg" alt="Features Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <div class="carousel">
+                <img src="img/7.jpeg" alt="Screenshot 1">
+                <img src="img/8.jpeg" alt="Screenshot 2">
+                <img src="img/9.jpeg" alt="Screenshot 3">
+                <img src="img/10.jpeg" alt="Screenshot 4">
+                <img src="img/11.jpeg" alt="Screenshot 5">
+                <img src="img/12.jpeg" alt="Screenshot 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="gameplay">
+        <div class="container">
+            <h2>Sonuç</h2>
+            <div class="text-image">
+                <div class="text">
+                    <p>Sonuç olarak, "Moto Racing in the Desert" Pin Up’ın yeteneklerini ve vizyonunu en iyi şekilde yansıtan bir oyun. Her yarış, oyunculara hem heyecan verici hem de öğretici bir deneyim sunuyor. Pin Up ile bu zorlu çöl yarışlarında yerinizi alın ve hızın, stratejinin ve rekabetin keyfini çıkarın!</p>
+                </div>
+                <div class="image">
+                    <img src="img/13.jpeg" alt="Gameplay Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="carousel">
+                <img src="img/14.jpg" alt="Gallery 1">
+                <img src="img/15.jpg" alt="Gallery 2">
+                <img src="img/16.jpg" alt="Gallery 3">
+                <img src="img/17.jpg" alt="Gallery 4">
+                <img src="img/18.png" alt="Gallery 5">
+                <img src="img/19.png" alt="Gallery 6">
+                <img src="img/20.png" alt="Gallery 7">
+                <img src="img/21.png" alt="Gallery 8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>İletişim bilgileri</h2>
+            <ul>
+                <li>Müşteri servisi: (+99450) 616-26-08</li>
+                <li>Email: info@motorcycleracing.com</li>
+                <li>Kurumsal Ofis Adresi: Azerbaijan,Baku, Nasimi district, Alimardan-bek Topchubashev 11</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Telif hakkı © 2024 Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+</body>
+</html>
