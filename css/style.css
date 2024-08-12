@@ -9775,6 +9775,9 @@ footer p {
 .container1{
   text-align: center;
 }
+.ls-none {
+   list-style: none;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
   .text-image {
